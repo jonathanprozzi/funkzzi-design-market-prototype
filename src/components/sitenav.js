@@ -38,7 +38,7 @@ const SiteNav = () => (
         <SiteLink>Portfolio</SiteLink>
       </li>
       <li>
-        <SiteLink>Event</SiteLink>
+        <SiteLink>Events</SiteLink>
       </li>
       <li>
         <SiteLink>About</SiteLink>
