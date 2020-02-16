@@ -1,6 +1,8 @@
 import React from "react"
 import { css } from "@emotion/core"
 import SiteNav from "../components/sitenav"
+import { IconContext } from "react-icons"
+import { MdFavorite, MdLocalCafe } from "react-icons/md"
 import { colors } from "../utils/colors"
 
 const Header = () => (
@@ -15,15 +17,27 @@ const Header = () => (
       color: #fff;
     `}
   >
-    <h1
-      css={css`
-        font-size: 3rem;
-        margin: 0;
-        padding: 0;
-      `}
-    >
-      Funkzzi
-    </h1>
+    <IconContext.Provider value={{ color: "#fff", size: "2rem" }}>
+      <div
+        css={css`
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        `}
+      >
+        <MdFavorite />
+        <h1
+          css={css`
+            font-size: 3rem;
+            margin: 0;
+            padding: 0 1rem;
+          `}
+        >
+          Funkzzi
+        </h1>
+        <MdLocalCafe />
+      </div>
+    </IconContext.Provider>
     <SiteNav />
   </div>
 )
