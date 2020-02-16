@@ -3,8 +3,12 @@ import emotionReset from "emotion-reset"
 import { Global, css } from "@emotion/core"
 import styled from "@emotion/styled"
 
-const Wrapper = styled.div`
+const Wrapper = styled.main`
   background: papayawhip;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 2px;
 `
 
 const Layout = ({ children }) => {

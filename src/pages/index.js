@@ -1,10 +1,13 @@
 import React from "react"
+import Layout from "../components/layout"
 import Header from "../components/header"
 import Masthead from "../components/masthead"
+import AboutSection from "../components/aboutsection"
 
 export default () => (
-  <div>
+  <Layout>
     <Header></Header>
     <Masthead></Masthead>
-  </div>
+    <AboutSection></AboutSection>
+  </Layout>
 )
