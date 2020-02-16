@@ -4,9 +4,7 @@ import { css } from "@emotion/core"
 import styled from "@emotion/styled"
 
 const BioImage = styled(Img)`
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-radius: 8px;
+  border-radius: 2px 2px 0 0;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   width: 100%;
   height: 100%;
@@ -26,9 +24,25 @@ const BioCard = ({ image, name, bio }) => (
     `}
   >
     <BioImage fluid={image}></BioImage>
-    <div>
-      <h3>{name}</h3>
-      <p>{bio}</p>
+    <div
+      css={css`
+        padding: 2rem;
+      `}
+    >
+      <h3
+        css={css`
+          font-size: 2rem;
+        `}
+      >
+        {name}
+      </h3>
+      <p
+        css={css`
+          font-size: 1rem;
+        `}
+      >
+        {bio}
+      </p>
     </div>
   </div>
 )

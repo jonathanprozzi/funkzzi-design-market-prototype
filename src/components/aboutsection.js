@@ -9,14 +9,14 @@ const AboutSection = () => {
       query {
         tracyImage: file(relativePath: { eq: "bios/tracy-profile.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 1000) {
+            fluid(maxWidth: 1000, maxHeight: 800) {
               ...GatsbyImageSharpFluid
             }
           }
         }
         jonImage: file(relativePath: { eq: "bios/jonathan-profile.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 1000) {
+            fluid(maxWidth: 1000, maxHeight: 800) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -28,10 +28,9 @@ const AboutSection = () => {
   return (
     <section
       css={css`
-        margin: 0 auto;
+        margin: 2rem auto;
         max-width: 900px;
         min-height: 100vh;
-        background: #fafafa;
       `}
     >
       <div
