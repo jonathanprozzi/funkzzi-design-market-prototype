@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import { css } from "@emotion/core"
 import SiteNav from "../components/sitenav"
 import { IconContext } from "react-icons"
@@ -14,6 +15,8 @@ const Header = () => (
       align-items: center;
       padding: 2rem 0;
       background: ${colors.accentColor};
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+        0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
       color: #fff;
     `}
   >
@@ -26,15 +29,27 @@ const Header = () => (
         `}
       >
         <MdFavorite />
-        <h1
+        <Link
+          to="/"
           css={css`
-            font-size: 3rem;
-            margin: 0;
-            padding: 0 1rem;
+            text-decoration: none;
+            color: #fff;
+            &:hover {
+              color: #000;
+              transition: "0.5s ease-in-out";
+            }
           `}
         >
-          Funkzzi
-        </h1>
+          <h1
+            css={css`
+              font-size: 3rem;
+              margin: 0;
+              padding: 0 1rem;
+            `}
+          >
+            Funkzzi
+          </h1>
+        </Link>
         <MdLocalCafe />
       </div>
     </IconContext.Provider>
