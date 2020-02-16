@@ -15,6 +15,7 @@ const Masthead = () => {
           css={css`
             color: white;
             font-size: 4rem;
+            text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
           `}
         >
           Funkzzi Design Market
@@ -23,6 +24,7 @@ const Masthead = () => {
           css={css`
             color: white;
             font-size: 2rem;
+            text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
           `}
         >
           Designs crafted with{" "}

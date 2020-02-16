@@ -2,6 +2,8 @@ import React from "react"
 import emotionReset from "emotion-reset"
 import { Global, css } from "@emotion/core"
 import styled from "@emotion/styled"
+import Header from "../components/header"
+import Footer from "../components/footer"
 
 const Wrapper = styled.main`
   background: papayawhip;
@@ -25,7 +27,9 @@ const Layout = ({ children }) => {
           }
         `}
       />
+      <Header />
       {children}
+      <Footer />
     </Wrapper>
   )
 }
