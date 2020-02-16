@@ -1,6 +1,7 @@
 import React from "react"
 import { css } from "@emotion/core"
 import SiteNav from "../components/sitenav"
+import { colors } from "../utils/colors"
 
 const Header = () => (
   <div
@@ -10,7 +11,7 @@ const Header = () => (
       justify-content: space-around;
       align-items: center;
       padding: 2rem 0;
-      background: #000;
+      background: ${colors.accentColor};
       color: #fff;
     `}
   >
