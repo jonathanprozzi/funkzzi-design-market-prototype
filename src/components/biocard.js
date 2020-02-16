@@ -1,5 +1,4 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import { css } from "@emotion/core"
 import styled from "@emotion/styled"
@@ -7,6 +6,11 @@ import styled from "@emotion/styled"
 const BioImage = styled(Img)`
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 `
 
 const BioCard = ({ image, name, bio }) => (
@@ -21,6 +25,7 @@ const BioCard = ({ image, name, bio }) => (
       background: #ffffff;
     `}
   >
+    <BioImage fluid={image}></BioImage>
     <div>
       <h3>{name}</h3>
       <p>{bio}</p>
