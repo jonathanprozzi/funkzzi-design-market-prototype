@@ -15,17 +15,24 @@ const SiteLink = styled(Link)`
 const SiteNav = () => (
   <nav
     css={css`
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      ul {
-      }
-      li {
-        list-style: none;
-      }
+      margin: 0;
+      padding: 0;
     `}
   >
-    <ul>
+    <ul
+      css={css`
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+
+        li {
+          list-style: none;
+          padding: 0 1rem;
+          margin: 0;
+        }
+      `}
+    >
       <li>
         <SiteLink>Portfolio</SiteLink>
       </li>

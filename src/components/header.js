@@ -7,11 +7,22 @@ const Header = () => (
     css={css`
       display: flex;
       flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      padding: 2rem 0;
       background: #000;
       color: #fff;
     `}
   >
-    <h1>Funkzzi</h1>
+    <h1
+      css={css`
+        font-size: 3rem;
+        margin: 0;
+        padding: 0;
+      `}
+    >
+      Funkzzi
+    </h1>
     <SiteNav />
   </div>
 )
