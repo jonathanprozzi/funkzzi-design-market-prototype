@@ -6,7 +6,6 @@ import Header from "../components/header"
 import Footer from "../components/footer"
 
 const Wrapper = styled.main`
-  background: papayawhip;
   min-height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
