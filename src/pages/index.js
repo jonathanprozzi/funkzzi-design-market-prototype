@@ -5,6 +5,7 @@ import AboutSection from "../components/aboutsection"
 import YarnSection from "../components/yarnsection"
 import PortfolioSection from "../components/portfoliosection"
 import EventSection from "../components/eventsection"
+import ContactForm from "../components/contactform"
 
 export default () => (
   <Layout>
@@ -15,5 +16,6 @@ export default () => (
     <PortfolioSection />
     <EventSection />
     <YarnSection />
+    <ContactForm />
   </Layout>
 )
