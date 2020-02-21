@@ -31,6 +31,10 @@ const AboutSection = () => {
         margin: 2rem auto;
         max-width: 900px;
         min-height: 100vh;
+
+        @media only screen and (max-width: 1000px) {
+          margin: 2rem;
+        }
       `}
     >
       <div
