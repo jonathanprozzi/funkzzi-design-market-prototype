@@ -4,13 +4,16 @@ import Masthead from "../components/masthead"
 import AboutSection from "../components/aboutsection"
 import YarnSection from "../components/yarnsection"
 import PortfolioSection from "../components/portfoliosection"
+import EventSection from "../components/eventsection"
 
 export default () => (
   <Layout>
-    <Masthead></Masthead>
-    <AboutSection></AboutSection>
-    <YarnSection></YarnSection>
+    <Masthead />
+    <AboutSection />
+    <YarnSection />
     <div style={{ backgroundColor: "papayawhip", minHeight: "40vh" }}></div>
-    <PortfolioSection></PortfolioSection>
+    <PortfolioSection />
+    <EventSection />
+    <YarnSection />
   </Layout>
 )
