@@ -1,6 +1,6 @@
 import React from "react"
 import { css } from "@emotion/core"
-import ItemGallery from "../components/itemgallery"
+import ItemGallery from "./item-gallery"
 
 const PortfolioSection = () => {
   return (

@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import { css } from "@emotion/core"
-import SiteNav from "../components/sitenav"
+import SiteNav from "./site-nav"
 import { IconContext } from "react-icons"
 import { MdFavorite, MdLocalCafe } from "react-icons/md"
 import { colors } from "../utils/colors"

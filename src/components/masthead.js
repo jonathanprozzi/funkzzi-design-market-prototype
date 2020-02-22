@@ -1,5 +1,5 @@
 import React from "react"
-import YarnSection from "../components/yarnsection"
+import YarnSection from "./yarn-section"
 import { css } from "@emotion/core"
 
 const Masthead = () => {
