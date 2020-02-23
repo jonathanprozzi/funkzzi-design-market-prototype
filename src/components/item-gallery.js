@@ -3,6 +3,8 @@ import { useStaticQuery, graphql } from "gatsby"
 import { css } from "@emotion/core"
 import Item from "./item"
 
+// query for images in this component -> passed to each ItemCard
+
 const ItemGallery = () => {
   const { critterImage, jewelryImage } = useStaticQuery(
     graphql`
