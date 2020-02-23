@@ -1,7 +1,16 @@
 import React from "react"
+import Img from "gatsby-image"
 import { css } from "@emotion/core"
+import styled from "@emotion/styled"
 
-const ItemCard = ({ image, title, description }) => {
+const ItemImage = styled(Img)`
+  border-radius: 2px 2px 0 0;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+`
+
+const ItemCard = ({ image, alt, title, description }) => {
   return (
     <div
       css={css`
@@ -15,16 +24,7 @@ const ItemCard = ({ image, title, description }) => {
         max-width: 400px;
       `}
     >
-      <div css={css``}>
-        <img
-          css={css`
-            border-radius: 2px 2px 0 0;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-          `}
-          src={image}
-          alt="Placeholder image"
-        />
-      </div>
+      <ItemImage fluid={image} alt={alt}></ItemImage>
       <div
         css={css`
           padding: 2rem;
