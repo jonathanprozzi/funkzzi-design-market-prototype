@@ -19,10 +19,16 @@ const ItemCard = ({ image, alt, title, description }) => {
         align-items: center;
         border-radius: 8px 8px 0 0;
         box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14),
-          0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3);
+        0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s cubic-bezier(.25,.8,.25,1);
         background: #fff;
         max-width: 800px;
         max-height: 600px;
+        cursor: pointer;
+        &:hover {
+          box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+          transform: translate3D(0, -1px, 0) scale(1.04)}
+        }
       `}
     >
       <ItemImage fluid={image} alt={alt}></ItemImage>

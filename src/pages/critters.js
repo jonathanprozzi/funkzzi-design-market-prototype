@@ -1,7 +1,9 @@
 import React from "react"
+import Layout from "../components/layout"
+import { css } from "@emotion/core"
 
 const CrittersPage = () => {
-  return <div></div>
+  return <Layout></Layout>
 }
 
-export default ApparelPage
+export default CrittersPage
