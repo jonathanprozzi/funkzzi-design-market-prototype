@@ -14,7 +14,6 @@ const Masthead = () => {
         <h2
           css={css`
             color: white;
-            font-size: 4rem;
             text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
           `}
         >

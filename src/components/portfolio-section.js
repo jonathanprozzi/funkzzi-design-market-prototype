@@ -12,6 +12,9 @@ const PortfolioSection = () => {
         justify-content: center;
         max-width: 900px;
         margin: 4rem auto;
+        @media only screen and (max-width: 1000px) {
+          margin: 2rem;
+        }
       `}
     >
       <h2
@@ -28,7 +31,13 @@ const PortfolioSection = () => {
         the patterns for all of the crocheted animals, many of which are custom
         designs that were made to order.
       </p>
-      <p>
+      <p
+        css={css`
+          @media only screen and (max-width: 1000px) {
+            padding-bottom: 1rem;
+          }
+        `}
+      >
         This is just a sampling of our designs. More will be added soon so be
         sure to check back! Click or tap each picture to see a larger version.
       </p>

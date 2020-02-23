@@ -25,20 +25,23 @@ const ContactForm = () => (
         /* box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); */
         padding: 4rem;
         label {
-          font-size: 1.5rem;
+          font-size: 1.25rem;
           margin-bottom: 0.5rem;
         }
         input,
         textarea {
-          font-size: 1.5rem;
-          border: 2px solid rgba(0, 0, 0, 0.2);
-          border-radius: 0.5rem;
+          font-size: 1rem;
+          line-height: 1.666;
+          font-family: "Avenir", "Helvetica Neue", "Segoe UI", "Helvetica",
+            "Arial", "sans-serif";
+          border: 2px solid var(--accent-color);
+          border-radius: 4px;
           padding: 1rem;
           margin-bottom: 2rem;
         }
         input::placeholder,
         textarea::placeholder {
-          font-size: 1.5rem;
+          font-size: 1.25rem;
           color: #777;
         }
       `}
@@ -83,23 +86,26 @@ const ContactForm = () => (
         id="whatsup"
         rows="5"
         cols="33"
-        placeholder="Tell us what's up!"
+        placeholder="Custom order? Any questions? Just saying hi?"
         required
       />
       <button
         css={css`
           color: #fff;
-          background: #1de9b6;
+          background: var(--accent-color);
           margin-top: 1rem;
           padding: 1rem;
-          border-radius: 2px;
-          font-size: 2rem;
+          border: none;
+          border-radius: 8px;
+          font-size: 1.5rem;
           text-align: center;
           letter-spacing: 0.5px;
-          transition: all ease 0.3s;
+          transition: all ease 0.5s;
 
           &:hover {
             cursor: pointer;
+            background: #00897b;
+            transform: scale3d(1.1, 1.1, 1.1);
           }
 
           &:focus {

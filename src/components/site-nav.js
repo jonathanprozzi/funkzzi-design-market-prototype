@@ -27,6 +27,11 @@ const SiteNav = () => (
         margin: 0;
         padding: 0;
 
+        @media only screen and (max-width: 1000px) {
+          flex-direction: column;
+          flex-wrap: wrap;
+        }
+
         li {
           list-style: none;
           padding: 0 1rem;

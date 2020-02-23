@@ -29,7 +29,9 @@ const Layout = ({ children }) => {
           body {
             margin: 0;
             padding: 0;
+            max-width: 100%;
             overflow-x: hidden;
+            width: 100%;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoosthing: grayscale;
             font-size: "16px";
@@ -45,6 +47,9 @@ const Layout = ({ children }) => {
             font-size: 4rem;
             letter-spacing: -0.5;
             font-weight: lighter;
+            @media only screen and (max-width: 1000px) {
+              font-size: 3rem;
+            }
           }
           h3 {
             font-size: 3rem;

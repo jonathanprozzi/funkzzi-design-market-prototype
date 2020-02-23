@@ -6,6 +6,7 @@ const YarnSection = ({ children, minHeight, position }) => (
   <section
     css={css`
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
       background-image: url(${yarnBackground});
