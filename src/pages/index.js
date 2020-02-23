@@ -10,8 +10,7 @@ const Index = () => (
   <Layout>
     <Masthead />
     <AboutSection />
-    <YarnSection />
-
+    <YarnSection minHeight="50vh" />
     <PortfolioSection />
     <EventSection />
     <YarnSection />

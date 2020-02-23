@@ -4,7 +4,7 @@ import { css } from "@emotion/core"
 
 const Masthead = () => {
   return (
-    <YarnSection>
+    <YarnSection minHeight="60vh">
       >
       <div
         css={css`
