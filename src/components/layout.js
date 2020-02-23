@@ -8,7 +8,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Global
-        css={css`
+        styles={css`
           ${emotionReset}
           *, *::after, *::before {
             box-sizing: border-box;
@@ -32,6 +32,42 @@ const Layout = ({ children }) => {
             overflow-x: hidden;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoosthing: grayscale;
+            font-size: "16px";
+            line-height: 1.666;
+            font-family: "Avenir", "Helvetica Neue", "Segoe UI", "Helvetica",
+              "Arial", "sans-serif";
+          }
+          h1 {
+          }
+          h2 {
+            font-size: 4rem;
+            letter-spacing: -0.5;
+            font-weight: lighter;
+          }
+          h3 {
+            font-size: 3rem;
+            letter-spacing: 0;
+            font-weight: normal;
+          }
+          h4 {
+            font-size: 2rem;
+            letter-spacing: 0.25;
+            font-weight: normal;
+          }
+          h5 {
+            font-size: 1.5rem;
+            letter-spacing: 0.15;
+            font-weight: normal;
+          }
+          h6 {
+            font-size: 1.25rem;
+            letter-spacing: 0;
+            font-weight: medium;
+          }
+          p {
+            font-size: 1rem;
+            letter-spacing: 0.5;
+            font-weight: normal;
           }
         `}
       />
