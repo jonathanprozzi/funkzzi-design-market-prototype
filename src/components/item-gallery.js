@@ -9,14 +9,14 @@ const ItemGallery = () => {
       query {
         critterImage: file(relativePath: { eq: "items/octopus-1.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 1000, maxHeight: 600) {
+            fluid(maxWidth: 1000, maxHeight: 1000) {
               ...GatsbyImageSharpFluid
             }
           }
         }
         jewelryImage: file(relativePath: { eq: "items/earrings-4.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 1000, maxHeight: 600) {
+            fluid(maxWidth: 1000, maxHeight: 1000) {
               ...GatsbyImageSharpFluid
             }
           }

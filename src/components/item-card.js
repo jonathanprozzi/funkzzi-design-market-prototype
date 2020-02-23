@@ -21,13 +21,15 @@ const ItemCard = ({ image, alt, title, description }) => {
         box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14),
           0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3);
         background: #fff;
-        max-width: 400px;
+        max-width: 800px;
+        max-height: 600px;
       `}
     >
       <ItemImage fluid={image} alt={alt}></ItemImage>
       <div
         css={css`
           padding: 2rem;
+          text-align: center;
         `}
       >
         <h3
