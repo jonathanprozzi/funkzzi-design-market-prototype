@@ -17,6 +17,7 @@
     "@emotion/core": "^10.0.27",
     "@emotion/styled": "^10.0.27",
     "emotion-reset": "^2.0.7",
+    "framer-motion": "^1.8.4",
     "gatsby": "^2.19.7",
     "gatsby-cli": "^2.8.30",
     "gatsby-image": "^2.2.41",
