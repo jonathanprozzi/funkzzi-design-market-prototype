@@ -1,6 +1,5 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { motion } from "framer-motion"
 import { css } from "@emotion/core"
 import BioCard from "./bio-card"
 
@@ -54,10 +53,7 @@ const AboutSection = () => {
         >
           About Us
         </h2>
-        <motion.div
-          initial={{ scale: 0.75 }}
-          animate={{ scale: 1 }}
-          transition={{ duration: 0.5 }}
+        <div
           css={css`
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -82,7 +78,7 @@ const AboutSection = () => {
             name="Jonathan Prozzi"
             bio="I'm an educator, technologist, musician, and design enthuasist. I'm passionate about discovering new mediums for expression, particularly at the intersection of art and technology."
           ></BioCard>
-        </motion.div>
+        </div>
       </div>
     </section>
   )
