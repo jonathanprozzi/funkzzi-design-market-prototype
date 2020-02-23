@@ -5,9 +5,8 @@ import AboutSection from "../components/about-section"
 import YarnSection from "../components/yarn-section"
 import PortfolioSection from "../components/portfolio-section"
 import EventSection from "../components/event-section"
-import ContactForm from "../components/contact-form"
 
-export default () => (
+const Index = () => (
   <Layout>
     <Masthead />
     <AboutSection />
@@ -16,6 +15,7 @@ export default () => (
     <PortfolioSection />
     <EventSection />
     <YarnSection />
-    <ContactForm />
   </Layout>
 )
+
+export default Index

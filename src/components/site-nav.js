@@ -43,7 +43,7 @@ const SiteNav = () => (
         <SiteLink>About</SiteLink>
       </li>
       <li>
-        <SiteLink>Contact</SiteLink>
+        <SiteLink to="/contact">Contact</SiteLink>
       </li>
     </ul>
   </nav>

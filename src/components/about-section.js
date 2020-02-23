@@ -9,14 +9,14 @@ const AboutSection = () => {
       query {
         tracyImage: file(relativePath: { eq: "bios/tracy-profile.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 1000, maxHeight: 800) {
+            fluid(maxWidth: 1000) {
               ...GatsbyImageSharpFluid
             }
           }
         }
         jonImage: file(relativePath: { eq: "bios/jonathan-profile.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 1000, maxHeight: 800) {
+            fluid(maxWidth: 1000) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -68,11 +68,13 @@ const AboutSection = () => {
         >
           <BioCard
             image={tracyImage.childImageSharp.fluid}
+            alt="Tracy standing outside near water"
             name="Tracy Funk"
             bio="By day, I am a Human Resources Specialist. However, my true passion is crafting! I'm always searching for inspiration and love discovering new mediums and developing new skills."
           ></BioCard>
           <BioCard
             image={jonImage.childImageSharp.fluid}
+            alt="Jonathan standing outside near a wall"
             name="Jonathan Prozzi"
             bio="I'm an educator, technologist, musician, and design enthuasist. I'm passionate about discovering new mediums for expression, particularly at the intersection of art and technology."
           ></BioCard>

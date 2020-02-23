@@ -15,14 +15,16 @@ const ItemCard = ({ image, title, description }) => {
         max-width: 400px;
       `}
     >
-      <img
-        css={css`
-          border-radius: 2px 2px 0 0;
-          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-        `}
-        src={image}
-        alt="Placeholder image"
-      />
+      <div css={css``}>
+        <img
+          css={css`
+            border-radius: 2px 2px 0 0;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+          `}
+          src={image}
+          alt="Placeholder image"
+        />
+      </div>
       <div
         css={css`
           padding: 2rem;

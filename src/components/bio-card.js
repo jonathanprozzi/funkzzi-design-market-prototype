@@ -8,10 +8,9 @@ const BioImage = styled(Img)`
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   width: 100%;
   height: 100%;
-  object-fit: cover;
 `
 
-const BioCard = ({ image, name, bio }) => (
+const BioCard = ({ image, alt, name, bio }) => (
   <div
     css={css`
       display: flex;
@@ -23,7 +22,14 @@ const BioCard = ({ image, name, bio }) => (
       background: #ffffff;
     `}
   >
-    <BioImage fluid={image}></BioImage>
+    <div
+      css={css`
+        width: 100%;
+        height: 450px;
+      `}
+    >
+      <BioImage fluid={image} alt={alt}></BioImage>
+    </div>
     <div
       css={css`
         padding: 2rem;

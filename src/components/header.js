@@ -13,11 +13,15 @@ const Header = () => (
       flex-direction: row;
       justify-content: space-around;
       align-items: center;
+      position: sticky;
+      top: 0;
+      width: 100%;
       padding: 1rem 0;
       background: ${colors.accentColor};
       box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
         0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
       color: #fff;
+      z-index: 1000;
     `}
   >
     <IconContext.Provider value={{ color: "#fff", size: "2rem" }}>
@@ -52,8 +56,8 @@ const Header = () => (
         </Link>
         <MdLocalCafe />
       </div>
+      <SiteNav />
     </IconContext.Provider>
-    <SiteNav />
   </div>
 )
 
