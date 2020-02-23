@@ -9,6 +9,7 @@ const YarnSection = ({ children }) => (
       align-items: center;
       justify-content: center;
       background-image: url(${yarnBackground});
+      background-attachment: fixed;
       background-size: cover;
       background-repeat: no-repeat;
       background-position: left center;

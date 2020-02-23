@@ -1,6 +1,5 @@
 import React from "react"
 import { css } from "@emotion/core"
-import { colors } from "../utils/colors"
 
 const Footer = () => (
   <footer
@@ -9,7 +8,7 @@ const Footer = () => (
       flex-direction: row;
       align-items: center;
       justify-content: center;
-      background: ${colors.accentColor};
+      background: var(--accent-color);
       color: #fff;
       min-height: 10vh;
     `}

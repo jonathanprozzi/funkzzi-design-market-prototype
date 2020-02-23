@@ -11,7 +11,7 @@ const Index = () => (
     <Masthead />
     <AboutSection />
     <YarnSection />
-    <div style={{ backgroundColor: "papayawhip", minHeight: "40vh" }}></div>
+
     <PortfolioSection />
     <EventSection />
     <YarnSection />
