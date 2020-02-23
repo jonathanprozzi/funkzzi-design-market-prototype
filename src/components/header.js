@@ -4,7 +4,6 @@ import { css } from "@emotion/core"
 import SiteNav from "./site-nav"
 import { IconContext } from "react-icons"
 import { MdFavorite, MdLocalCafe } from "react-icons/md"
-import { colors } from "../utils/colors"
 
 const Header = () => (
   <div
@@ -18,7 +17,7 @@ const Header = () => (
       z-index: 1000;
       width: 100%;
       padding: 1rem 0;
-      background: ${colors.accentColor};
+      background: var(--accent-color);
       box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
         0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
       color: #fff;

@@ -36,6 +36,8 @@ const Layout = ({ children }) => {
             line-height: 1.666;
             font-family: "Avenir", "Helvetica Neue", "Segoe UI", "Helvetica",
               "Arial", "sans-serif";
+            /* global variables */
+            --accent-color: #1ce9b6;
           }
           h1 {
           }
