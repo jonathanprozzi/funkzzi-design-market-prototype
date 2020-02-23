@@ -6,6 +6,7 @@ import styled from "@emotion/styled"
 const SiteLink = styled(Link)`
   color: #fff;
   text-decoration: none;
+  font-size: 1.25rem;
   &:hover {
     color: #000;
     transition: 0.5s ease-in-out;
