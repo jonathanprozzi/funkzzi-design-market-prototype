@@ -1,10 +1,11 @@
-import React from "react"
+import React, { useState, useContext } from "react"
 import { Link } from "gatsby"
 import { css } from "@emotion/core"
 import styled from "@emotion/styled"
 // import { useSpring, animated, config } from 'react-spring';
 
 const NavDrawer = () => {
+  const [drawerOpen, setDrawerOpen] = useState(false)
   return (
     <div
       css={css`
