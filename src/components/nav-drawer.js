@@ -7,44 +7,48 @@ import styled from "@emotion/styled"
 const NavDrawer = () => {
   const [drawerOpen, setDrawerOpen] = useState(false)
   return (
-    <div
-      css={css`
-        position: fixed;
-        top: 0;
-        left: 0;
-        padding: 4rem;
-        max-height: 100vh;
-        min-height: 50vh;
-        max-width: 80vh;
-        background: rgba(255, 255, 255, 0.9);
-        z-index: 10;
-      `}
-    >
-      <SlideNavContainer>
-        <SiteNavList>
-          <SiteNavEntry>
-            <SiteNavLink color="var(--accent-color)" to="/portfolio">
-              Portfolio
-            </SiteNavLink>
-          </SiteNavEntry>
-          <SiteNavEntry>
-            <SiteNavLink color="var(--accent-color)" to="/events">
-              Events
-            </SiteNavLink>
-          </SiteNavEntry>
-          <SiteNavEntry>
-            <SiteNavLink color="var(--accent-color)" to="/about">
-              About
-            </SiteNavLink>
-          </SiteNavEntry>
-          <SiteNavEntry>
-            <SiteNavLink color="var(--accent-color)" to="/contact">
-              Contact
-            </SiteNavLink>
-          </SiteNavEntry>
-        </SiteNavList>
-      </SlideNavContainer>
-    </div>
+    <>
+      {drawerOpen && (
+        <div
+          css={css`
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding: 4rem;
+            max-height: 100vh;
+            min-height: 50vh;
+            max-width: 80vh;
+            background: rgba(255, 255, 255, 0.9);
+            z-index: 10;
+          `}
+        >
+          <SlideNavContainer>
+            <SiteNavList>
+              <SiteNavEntry>
+                <SiteNavLink color="var(--accent-color)" to="/portfolio">
+                  Portfolio
+                </SiteNavLink>
+              </SiteNavEntry>
+              <SiteNavEntry>
+                <SiteNavLink color="var(--accent-color)" to="/events">
+                  Events
+                </SiteNavLink>
+              </SiteNavEntry>
+              <SiteNavEntry>
+                <SiteNavLink color="var(--accent-color)" to="/about">
+                  About
+                </SiteNavLink>
+              </SiteNavEntry>
+              <SiteNavEntry>
+                <SiteNavLink color="var(--accent-color)" to="/contact">
+                  Contact
+                </SiteNavLink>
+              </SiteNavEntry>
+            </SiteNavList>
+          </SlideNavContainer>
+        </div>
+      )}
+    </>
   )
 }
 
