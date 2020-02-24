@@ -2,8 +2,10 @@ import React from "react"
 import { Link } from "gatsby"
 import { css } from "@emotion/core"
 import SiteNav from "./site-nav"
+import NavdDrawer from "./nav-drawer"
 import { IconContext } from "react-icons"
 import { MdFavorite, MdLocalCafe } from "react-icons/md"
+import NavDrawer from "./nav-drawer"
 
 const Header = () => (
   <div
@@ -55,6 +57,7 @@ const Header = () => (
         </Link>
         <MdLocalCafe />
       </div>
+      <NavDrawer />
       <SiteNav />
     </IconContext.Provider>
   </div>
