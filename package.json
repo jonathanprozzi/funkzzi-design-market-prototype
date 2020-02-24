@@ -19,7 +19,7 @@
     "emotion-reset": "^2.0.7",
     "framer-motion": "^1.8.4",
     "gatsby": "^2.19.7",
-    "gatsby-cli": "^2.8.30",
+    "gatsby-cli": "^2.9.0",
     "gatsby-image": "^2.2.41",
     "gatsby-plugin-emotion": "^4.1.22",
     "gatsby-plugin-sharp": "^2.4.5",

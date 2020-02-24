@@ -2,18 +2,31 @@ import React, { useState, useContext } from "react"
 import { Link } from "gatsby"
 import { css } from "@emotion/core"
 import styled from "@emotion/styled"
+import { IconContext } from "react-icons"
+import { MdMenu } from "react-icons/md"
 // import { useSpring, animated, config } from 'react-spring';
 
 const NavDrawer = () => {
   const [drawerOpen, setDrawerOpen] = useState(false)
   return (
-    <>
+    <div
+      css={css`
+        @media only screen and (min-width: 1000px) {
+          display: none;
+        }
+      `}
+    >
+      <div onClick={() => setDrawerOpen(!drawerOpen)}>
+        <IconContext.Provider value={{ color: "#fff", size: "2rem" }}>
+          <MdMenu></MdMenu>
+        </IconContext.Provider>
+      </div>
       {drawerOpen && (
         <div
           css={css`
             position: fixed;
             top: 0;
-            left: 0;
+            right: 0;
             padding: 4rem;
             max-height: 100vh;
             min-height: 50vh;
@@ -48,7 +61,7 @@ const NavDrawer = () => {
           </SlideNavContainer>
         </div>
       )}
-    </>
+    </div>
   )
 }
 

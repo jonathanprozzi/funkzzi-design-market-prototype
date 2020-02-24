@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import { css } from "@emotion/core"
 import SiteNav from "./site-nav"
+import NavDrawer from "./nav-drawer"
 import { IconContext } from "react-icons"
 import { MdFavorite, MdLocalCafe } from "react-icons/md"
 
@@ -23,6 +24,7 @@ const Header = () => (
       color: #fff;
     `}
   >
+    <NavDrawer />
     <IconContext.Provider value={{ color: "#fff", size: "2rem" }}>
       <div
         css={css`
